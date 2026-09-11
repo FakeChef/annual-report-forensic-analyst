@@ -1,70 +1,120 @@
 # Annual Report Forensic Analyst
 
-[中文](README.md) | [English](README_EN.md)
+English | [中文](README_CN.md)
 
 Version v2.1.2 · Apache License 2.0
 
-一个将年度报告作为证据进行分析的财报取证研究框架。
+## Overview
 
-## 这是什么？
+Annual Report Forensic Analyst is a research analysis engine for testing how companies create value and whether management narratives are supported by disclosed evidence. It is designed for annual reports, multi-year research, and executive communication.
 
-Annual Report Forensic Analyst 不是年度报告摘要生成器。
+The research chain is:
 
-它重建企业的价值创造逻辑，并检验管理层叙事是否得到财务证据支持。
+```text
+Annual Report Evidence
+        ↓
+Business Model Reconstruction
+        ↓
+Management Narrative Testing
+        ↓
+Financial Reality Analysis
+        ↓
+Capital Allocation Review
+        ↓
+Future Success Assumptions
+```
 
-## 核心问题
+This is not an investment advice tool, stock recommendation tool, valuation model, or financial prediction engine. It does not provide buy/sell recommendations, stock ratings, target prices, valuation opinions, or unsupported forecasts.
 
-- 公司如何创造价值？
-- 管理层希望利益相关者相信什么？
-- 已披露的证据是否支持这一叙事？
-- 增长是否转化为利润、现金流和资本回报？
-- 哪些关键假设可能导致战略失效？
+## Research Workflow
 
-## 分析原则
+```text
+Annual Reports
+        ↓
+Annual Report Forensic Analyst
+        ↓
+Forensic Research Output
+        ↓
+Output Layer
+        ↓
+PDF Report / Executive Slides / Internal Briefing
+```
 
-每一项结论都区分：
+The core skill generates analytical research. PDF and slide generation are separate output processes that transform completed research into a delivery format.
 
-- 事实（Fact）
-- 推断（Inference）
-- 分析师观点（Analyst View）
+## Analytical Principles
 
-本框架不提供：
+Every conclusion separates:
 
-- 投资建议
-- 股票评级
-- 目标价
-- 缺乏证据支持的预测
+- Fact: information directly disclosed in the source material.
+- Inference: a reasoned interpretation based on disclosed facts.
+- Analyst View: an independent assessment with stated limitations.
 
-## 分析模式
+Management claims are treated as hypotheses to test, not conclusions to repeat.
 
-### 单年度财报取证模式
+## Modes
 
-用于分析单份年度报告。
+- Single-Year Forensic Mode: analyze one annual report.
+- Multi-Year Forensic Mode: explain business model, narrative, financial, and capital allocation changes across years.
+- Executive Slide Mode: convert research conclusions into evidence-led executive communication.
 
-### 多年度财报取证模式
+## Quick Start
 
-用于分析企业跨多个年度的业务变迁。
+Example: SAP, Multi-Year Forensic Mode, using the 2023, 2024, and 2025 annual reports.
 
-### 高管汇报幻灯片模式
+```text
+Analyze the following annual reports using Annual Report Forensic Analyst v2.1.1.
 
-将研究结论转化为高管沟通材料。
+Company: SAP
+Mode: Multi-Year Forensic Mode
+Reports: 2023 Annual Report; 2024 Annual Report; 2025 Annual Report
 
-## 安装
+Focus on:
+1. Business model reconstruction
+2. Value creation logic
+3. Management narrative evolution
+4. Evidence supporting management claims
+5. Evidence challenging management claims
+6. Financial reality
+7. Capital allocation
+8. Future success assumptions
 
-Codex 用户可从 Releases 下载 Codex Skill 安装包。开发者可以克隆本仓库，直接使用其中的 framework、workflows、prompts、examples 和 tests。详见 [INSTALLATION.md](INSTALLATION.md)。
+Separate every conclusion into Fact, Inference, and Analyst View.
+Do not provide investment recommendations, target prices, stock ratings,
+or unsupported predictions.
+```
 
-## 本项目不是什么
+Provide the annual reports as files or clearly identified source material. For Multi-Year Forensic Mode, provide comparable reports for the selected period and state any missing years, restatements, currency changes, or scope differences.
 
-这是一个研究与推理框架，不构成投资建议。本项目不提供买入/卖出建议、股票评级、目标价、估值模型或缺乏证据支持的预测。
+## Installation and Use
 
-## 仓库结构
+Codex users should download the Codex Skill Install Package from Releases and follow [INSTALLATION.md](INSTALLATION.md). Developers can clone this repository and review the framework, workflows, prompts, examples, and tests directly.
 
-- framework/：方法论
-- workflows/：执行流程
-- prompts/：可复用提示词
-- examples/：示例
-- tests/：验证记录
+After the skill is installed:
 
-## 版本
+1. Prepare one or more annual reports.
+2. Choose Single-Year or Multi-Year Forensic Mode.
+3. Use the forensic analysis prompt template.
+4. Review evidence, uncertainty, and Fact / Inference / Analyst View separation.
+5. Use the separate PDF or executive slide prompt only after the research is complete.
 
-当前版本：v2.1.2
+## Repository Structure
+
+- `framework/`: core methodology and analytical principles
+- `workflows/`: repeatable research processes
+- `prompts/`: analysis and output-layer prompt templates
+- `examples/`: public example guidance
+- `tests/`: validation records
+- `docs/`: repository and architecture documentation
+
+## Limitations
+
+This project is a research and reasoning framework, not investment advice. It does not provide investment recommendations, buy/sell recommendations, stock ratings, target prices, valuation opinions, financial forecasts, or certainty beyond the available evidence.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+## Version
+
+Current release: v2.1.2

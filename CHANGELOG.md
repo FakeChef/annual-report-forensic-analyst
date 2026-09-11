@@ -1,5 +1,16 @@
 # Changelog
 
+## Documentation Enhancement
+
+Added:
+
+- bilingual README documentation
+- bilingual prompt library
+- PDF generation prompt
+- executive slide prompt
+- user workflow documentation
+- bilingual architecture documentation
+
 ## v2.1.2
 
 Documentation localization release.
