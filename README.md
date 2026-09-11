@@ -42,6 +42,82 @@ PDF Report / Executive Slides / Internal Briefing
 
 The core skill generates analytical research. PDF and slide generation are separate output processes that transform completed research into a delivery format.
 
+## Output Layer
+
+The Annual Report Forensic Analyst core skill produces structured forensic research output. It does not directly generate final deliverables.
+
+```text
+Annual Reports
+        ↓
+Annual Report Forensic Analyst
+        ↓
+Forensic Research Output
+        ↓
+Output Layer
+        ↓
+PDF Report / Executive Slides / Internal Briefing
+```
+
+The Output Layer converts completed research into different communication formats.
+
+## Available Output Prompts
+
+Reusable output prompts are located in `prompts/`.
+
+### PDF Report Generation Prompt
+
+File: [prompts/pdf-report-generation-prompt.md](prompts/pdf-report-generation-prompt.md)
+
+Purpose: convert completed forensic research into a professional analytical report.
+
+Suitable for:
+
+- management reports
+- research reports
+- internal decision documents
+
+Output structure:
+
+1. Executive Summary
+2. Business Model
+3. Management Narrative
+4. Evidence Review
+5. Financial Reality
+6. Capital Allocation
+7. Key Risks
+8. Monitoring Dashboard
+
+Requirements: preserve Fact / Inference / Analyst View, maintain evidence traceability, do not introduce unsupported conclusions, and do not provide valuation opinions.
+
+### Executive Slide Generation Prompt
+
+File: [prompts/executive-slide-generation-prompt.md](prompts/executive-slide-generation-prompt.md)
+
+Purpose: convert forensic research conclusions into executive communication slides.
+
+Suitable for:
+
+- CFO briefings
+- CEO presentations
+- board discussions
+- strategy reviews
+
+Recommended structure: Executive Judgment, Business Model, Value Creation Logic, Management Narrative Evolution, Supporting Evidence, Contradicting Evidence, Financial Reality, Capital Allocation, Success Assumptions, Key Risks, Monitoring Dashboard, and Final Judgment.
+
+## Important Design Principle
+
+PDF and Slides are intentionally separated from the core forensic engine because research quality should not be constrained by presentation format.
+
+```text
+Research Engine
+        ↓
+Structured Analysis
+        ↓
+Output Prompt
+        ↓
+PDF / Slides / Briefing
+```
+
 ## Analytical Principles
 
 Every conclusion separates:
@@ -56,7 +132,7 @@ Management claims are treated as hypotheses to test, not conclusions to repeat.
 
 - Single-Year Forensic Mode: analyze one annual report.
 - Multi-Year Forensic Mode: explain business model, narrative, financial, and capital allocation changes across years.
-- Executive Slide Mode: convert research conclusions into evidence-led executive communication.
+- Executive presentation support: provides structured research input for slide generation.
 
 ## Quick Start
 
@@ -102,7 +178,7 @@ After the skill is installed:
 
 - `framework/`: core methodology and analytical principles
 - `workflows/`: repeatable research processes
-- `prompts/`: analysis and output-layer prompt templates
+- `prompts/`: analysis prompts and output-layer prompt templates
 - `examples/`: public example guidance
 - `tests/`: validation records
 - `docs/`: repository and architecture documentation

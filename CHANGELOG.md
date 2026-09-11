@@ -11,6 +11,13 @@ Added:
 - user workflow documentation
 - bilingual architecture documentation
 
+Documentation refinement:
+
+- Output Layer documentation
+- PDF report generation guidance
+- Executive slide generation guidance
+- Clear separation between research engine and delivery formats
+
 ## v2.1.2
 
 Documentation localization release.
