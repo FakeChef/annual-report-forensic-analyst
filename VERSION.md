@@ -4,7 +4,7 @@ Annual Report Forensic Analyst
 
 Current Version:
 
-v2.1.1
+v2.1.2
 
 Release Type:
 

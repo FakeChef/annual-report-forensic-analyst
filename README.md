@@ -1,68 +1,70 @@
 # Annual Report Forensic Analyst
 
-Version v2.1.1 · Apache License 2.0
+[中文](README.md) | [English](README_EN.md)
 
-A forensic research framework for analyzing annual reports as evidence.
+Version v2.1.2 · Apache License 2.0
 
-## What is this?
+一个将年度报告作为证据进行分析的财报取证研究框架。
 
-Annual Report Forensic Analyst is not an annual report summarizer.
+## 这是什么？
 
-It reconstructs how companies create value and tests whether management narratives are supported by financial evidence.
+Annual Report Forensic Analyst 不是年度报告摘要生成器。
 
-## Core Questions
+它重建企业的价值创造逻辑，并检验管理层叙事是否得到财务证据支持。
 
-- How does the company create value?
-- What does management want stakeholders to believe?
-- Does disclosed evidence support that narrative?
-- Is growth converting into profit, cash flow and capital returns?
-- Which assumptions could cause the strategy to fail?
+## 核心问题
 
-## Analytical Principles
+- 公司如何创造价值？
+- 管理层希望利益相关者相信什么？
+- 已披露的证据是否支持这一叙事？
+- 增长是否转化为利润、现金流和资本回报？
+- 哪些关键假设可能导致战略失效？
 
-Every conclusion separates:
+## 分析原则
 
-- Fact
-- Inference
-- Analyst View
+每一项结论都区分：
 
-The framework avoids:
+- 事实（Fact）
+- 推断（Inference）
+- 分析师观点（Analyst View）
 
-- investment recommendations
-- stock ratings
-- target prices
-- unsupported predictions
+本框架不提供：
 
-## Modes
+- 投资建议
+- 股票评级
+- 目标价
+- 缺乏证据支持的预测
 
-### Single-Year Forensic Mode
+## 分析模式
 
-Analyze one annual report.
+### 单年度财报取证模式
 
-### Multi-Year Forensic Mode
+用于分析单份年度报告。
 
-Analyze business transformation over multiple years.
+### 多年度财报取证模式
 
-### Executive Slide Mode
+用于分析企业跨多个年度的业务变迁。
 
-Convert research conclusions into executive communication.
+### 高管汇报幻灯片模式
 
-## Installation
+将研究结论转化为高管沟通材料。
 
-For Codex users, download the Codex Skill Install Package from Releases. Developers can clone this repository and use the framework, workflows, prompts, examples, and tests directly. See [INSTALLATION.md](INSTALLATION.md).
+## 安装
 
-## What this is not
+Codex 用户可从 Releases 下载 Codex Skill 安装包。开发者可以克隆本仓库，直接使用其中的 framework、workflows、prompts、examples 和 tests。详见 [INSTALLATION.md](INSTALLATION.md)。
 
-This is a research and reasoning framework, not investment advice. It does not provide buy/sell recommendations, stock ratings, target prices, valuation models, or unsupported forecasts.
+## 本项目不是什么
 
-## Repository Structure
+这是一个研究与推理框架，不构成投资建议。本项目不提供买入/卖出建议、股票评级、目标价、估值模型或缺乏证据支持的预测。
 
-- framework/: methodology
-- workflows/: execution process
-- prompts/: reusable prompts
-- examples/: demonstrations
-- tests/: validation records
+## 仓库结构
 
-## Version
+- framework/：方法论
+- workflows/：执行流程
+- prompts/：可复用提示词
+- examples/：示例
+- tests/：验证记录
 
-Current release: v2.1.1
+## 版本
+
+当前版本：v2.1.2

@@ -1,5 +1,17 @@
-# Code of Conduct
+# 行为准则
 
-Maintain professional and evidence-based discussions.
+本项目遵循 Contributor Covenant 的核心原则和 GitHub 社区标准，维护专业、包容、善意且以证据为基础的交流环境。
 
-Avoid unsupported claims and personal attacks.
+## 社区参与原则
+
+- 尊重不同背景、经验和观点的贡献者。
+- 以善意参与讨论，针对问题和证据，而不是针对个人。
+- 清晰区分事实、推断和观点，并承认不确定性。
+- 避免无证据支持的断言、人身攻击、骚扰、歧视性言论和其他不当行为。
+- 对不同意见保持建设性，帮助社区共同改进研究质量。
+
+## GitHub 社区标准
+
+所有 Issue、Pull Request、讨论和其他社区互动都应遵守 GitHub 的社区标准。维护者可以对违反本准则的内容进行处理，并在必要时限制参与资格。
+
+如遇到违反行为，请通过项目支持渠道或 GitHub 的私密沟通方式联系维护者，并尽可能提供相关上下文。
