@@ -174,6 +174,20 @@ After the skill is installed:
 4. Review evidence, uncertainty, and Fact / Inference / Analyst View separation.
 5. Use the separate PDF or executive slide prompt only after the research is complete.
 
+## WorkBuddy Edition
+
+Annual Report Forensic Analyst v2.2.0 WorkBuddy Marketplace Edition is an independent adaptation layer for WorkBuddy. It preserves the v2.1.2 framework, workflows, prompts, and analytical method while adding Marketplace routing for:
+
+- Single Year Forensic Mode
+- Multi Year Forensic Mode
+- PDF Report Generation
+- Executive Slide Generation
+- Infographic Generation
+
+Marketplace shortcuts include 三年年报分析, CFO汇报材料, PDF研究报告, and 企业研究信息图. Install the package from the release ZIP and follow [workbuddy-edition/INSTALLATION.md](workbuddy-edition/INSTALLATION.md). The manifest is [workbuddy-edition/skill.json](workbuddy-edition/skill.json), and the WorkBuddy entrypoint is [workbuddy-edition/SKILL.md](workbuddy-edition/SKILL.md).
+
+The edition includes anonymized structure-only examples for SAP, Sandvik, Schneider, and ABB. No annual-report content or private company deliverables are included.
+
 ## Repository Structure
 
 - `framework/`: core methodology and analytical principles

@@ -1,0 +1,47 @@
+{
+  "name": "annual-report-forensic-analyst-workbuddy",
+  "displayName": "Annual Report Forensic Analyst v2.2.4 WorkBuddy Marketplace Edition",
+  "version": "2.2.4",
+  "description": "Evidence-based annual report research framework for enterprise research and management decision support, with CFO, strategy, consulting, and general-user workflows. Not legal investigation or investment advice.",
+  "publisher": "Annual Report Forensic Analyst",
+  "license": "Apache-2.0",
+  "entrypoint": "SKILL.md",
+  "language": ["en", "zh-CN"],
+  "capabilities": [
+    "single-year-forensic",
+    "multi-year-forensic",
+    "pdf-report-generation",
+    "executive-slide-generation",
+    "infographic-generation"
+  ],
+  "scenarios": [
+    { "id": "three-year-annual-report-analysis", "label": "三年年报分析", "mode": "multi-year-forensic" },
+    { "id": "cfo-briefing-materials", "label": "CFO汇报材料", "mode": "executive-slide-generation" },
+    { "id": "pdf-research-report", "label": "PDF研究报告", "mode": "pdf-report-generation" },
+    { "id": "enterprise-research-infographic", "label": "企业研究信息图", "mode": "infographic-generation" }
+  ],
+  "userScenarios": [
+    { "persona": "CFO", "uses": ["年度经营复盘", "竞争分析", "管理层汇报准备"] },
+    { "persona": "Strategy", "uses": ["商业模式变化", "竞争格局分析"] },
+    { "persona": "Consultant", "uses": ["客户研究底稿", "汇报材料准备"] },
+    { "persona": "General User", "uses": ["上传年报即可开始企业研究"] }
+  ],
+  "files": {
+    "skill": "SKILL.md",
+    "readme": "README.md",
+    "readmeCN": "README_CN.md",
+    "installation": "INSTALLATION.md",
+    "examples": "examples/",
+    "quickStart": "QUICK_START.md",
+    "screenshotsGuide": "marketing/screenshots/screenshots-guide.md",
+    "executiveSlidePromptEN": "prompts/executive-slide-generation-prompt_EN.md",
+    "executiveSlidePromptCN": "prompts/executive-slide-generation-prompt_CN.md",
+    "version": "VERSION.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "compatibility": {
+    "baseProject": "annual-report-forensic-analyst",
+    "baseVersion": "2.1.2",
+    "coreMethodologyUnchanged": true
+  }
+}
